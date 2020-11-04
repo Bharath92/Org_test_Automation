@@ -1,0 +1,19 @@
+pipelines:
+  - name: basic1
+    steps:
+      - name: basic
+        type: Bash
+        configuration:
+          runtime:
+            type: host
+          inputResources:
+           - name: git
+          environmentVariables:
+            foo: bar
+          runtime:
+            type: host
+        execution:
+          onExecute:
+            - printenv
+            - echo lol
+            - add_pipeline_variables foo=bar

@@ -1,6 +1,0 @@
-resources:
-  - name: r_bitbucket
-    type: GitRepo
-    configuration:
-      gitProvider: i_bitbucket
-      path: jfbetapipeorg/org_test_automation
