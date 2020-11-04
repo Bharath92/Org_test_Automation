@@ -10,8 +10,6 @@ pipelines:
            - name: git
           environmentVariables:
             foo: bar
-          runtime:
-            type: host
         execution:
           onExecute:
             - printenv
