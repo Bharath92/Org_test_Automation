@@ -1,0 +1,10 @@
+pipelines:
+  - name: N_DyNodeK8s_A_0022
+    steps:
+      - name: N_DyNodeK8s_A_0022
+        type: Bash
+        configuration:
+          nodePool: test_automation_kubernetesNodePool_c7
+        execution:
+          onExecute:
+            - sleep 1m
